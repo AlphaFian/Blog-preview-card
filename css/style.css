@@ -1,0 +1,87 @@
+:root {
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-gray-950: hsl(0, 0%, 7%);
+  --color-grey-500: hsl(0, 0%, 42%);
+  --color-white: hsl(0, 0%, 100%);
+  --fs-1: 1.5rem; /*line height 1.5*/
+  --fs-2: 1rem; /*line height 1.5*/
+  --fs-3: 0.875rem; /*line height 1.5 dan ada bold*/
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Figtree", serif;
+  background-color: var(--color-yellow);
+}
+h1,
+h2,
+h3,
+p {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  height: auto;
+}
+.header img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+}
+.cards {
+  margin-top: 9.75em;
+  margin-inline: auto;
+  width: 20.4375em;
+  background-color: var(--color-white);
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 8px 8px 0 #000000;
+}
+.text {
+  /* margin-block: 1.5em; */
+}
+.label h3 {
+  width: 73px;
+  border-radius: 4px;
+  padding: 0.25em 1em;
+  background-color: var(--color-yellow);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.published {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-block: 0.75em;
+}
+.title {
+  font-size: var(--fs-1);
+  margin-bottom: 0.75em;
+  color: var(--color-gray-950);
+}
+.description {
+  font-size: var(--fs-2);
+  /* font-weight: 400; */
+  color: var(--color-grey-500);
+}
+.author {
+  margin-top: 1.5em;
+  display: flex;
+  align-items: center;
+}
+.author img {
+  width: 32px;
+}
+.author p {
+  padding-left: 0.75em;
+}
+.attribution {
+  margin-top: 1em;
+}
